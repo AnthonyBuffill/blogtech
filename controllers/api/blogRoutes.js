@@ -1,4 +1,3 @@
-
 const router = require('express').Router();
 const { Blogpost, User } = require('../../models');
 
@@ -43,16 +42,17 @@ router.get('/create', (req, res) => {
 
 router.post('/create-blogpost', async (req, res) => {
   try {
-    const { title, body } = req.body;
+    const { title, body, user_id } = req.body;
     const userId = req.session.user_id; 
   
     const newBlogpost = await Blogpost.create({
       title,
       body,
-      user_id: userId,
+      user_id: 1,
     });
    
-    res.redirect('/currentposts');
+    res.json(newBlogpost)
+    // res.render('homepage')
   } 
     catch (err) {
     console.error(err);
@@ -61,6 +61,3 @@ router.post('/create-blogpost', async (req, res) => {
 });
 
 module.exports = router;
-
-
-
