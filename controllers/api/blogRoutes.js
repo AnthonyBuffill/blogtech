@@ -28,7 +28,8 @@ router.get('/currentposts', async (req, res) => {
     });
 
     const logged_in = req.session.logged_in || false;
-    res.render('homepage', { blogposts, logged_in });
+    res.render('homepage', { blogposts, logged_in: req.session.logged_in || false });
+
   } 
     catch (err) {
     console.error(err);

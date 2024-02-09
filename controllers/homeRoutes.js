@@ -8,12 +8,12 @@ router.get('/', withAuth, async (req, res) => {
       attributes: { exclude: ['password'] },
       order: [['name', 'ASC']],
     });
-
+    req.session.logged_in = true
     const users = userData.map((project) => project.get({ plain: true }));
 
     res.render('homepage', {
       users,
-      logged_in: req.session.logged_in,
+      // logged_in: req.session.logged_in,
     });
   } 
     catch (err) {
@@ -22,11 +22,6 @@ router.get('/', withAuth, async (req, res) => {
 });
 
 router.get('/login', (req, res) => {
-  if (req.session.logged_in) {
-    res.redirect('/');
-    return;
-  }
-
   res.render('login');
 });
 
