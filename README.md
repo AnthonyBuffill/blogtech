@@ -16,7 +16,7 @@
 
 ## Installation
 
-  Files can be cloned via github and by using npm install  and MYSQL2, you may access the program from your systems terminal or command line.
+  Files can be cloned via github and by using npm install  and MYSQL2, you may access the program from your systems terminal or command line. you must remove the ".DELETE from the filename env.DELETE
 
 
 
@@ -101,4 +101,4 @@ Or, email me at : Abuffill@outlook.com
 
 
 
-    ch
+   
