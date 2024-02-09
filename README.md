@@ -1,6 +1,12 @@
 # BLOGTECH BLOG
  ![](https://img.shields.io/badge/javascript-MIT-blue)
 
+ ![Screen Shot 2024-02-09 at 1 07 26 AM](https://github.com/AnthonyBuffill/blogtech/assets/153314977/ee68e6ad-bdc0-43c3-bec0-018bf95df798)
+
+
+![Screen Shot 2024-02-09 at 1 07 37 AM](https://github.com/AnthonyBuffill/blogtech/assets/153314977/7a487f07-8feb-42d6-859e-ab8c6886004e)
+
+
 ## Description
    
   This application leverages MYSQL, NODE, and JAVASCRIPT to created a Fullstack application for a quick blogging site related to technology and hot takes by writing a message up to 255 characters. 
